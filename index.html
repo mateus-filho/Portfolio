@@ -1,100 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
-    <title>Portfolio</title>
-  </head>
-  <body>
-    <div class="section-1">
-      <aside>
-        <div class="icon-menu" onclick="abrirmenu()">
-          <img src="img/menu03.png" alt="menu" />
-        </div>
-        <!--icon-menu-->
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<script src="script.js"></script>
+		<title>Portfolio</title>
+	</head>
+	<body>
+		<div class="section-1" id="inicio">
+			<!--icon-menu-->
+			<aside>
+				<div class="icon-menu" onclick="abrirmenu()">
+					<img src="img/menu02.png" alt="menu" />
+				</div>
+				
+				<!--barra-menu-->
+				<div id="barra-menu">
+					<ul>
+						<li>
+							<a class="scroll-link" href="#inicio">Inicio</a>
+						</li>
+						<li>
+							<a class="scroll-link" href="#sobre">Sobre mim</a>
+						</li>
+						<li>
+							<a class="scroll-link" href="#container"
+								>Habilidades</a
+							>
+						</li>
+						<li>
+							<a class="scroll-link" href="#contato">Contato</a>
+						</li>
+					</ul>
 
-        <div id="barra-menu">
-          <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Sobre mim</a></li>
-            <li><a href="#">Habilidades</a></li>
-            <li><a href="#">Contato</a></li>
-          </ul>
-          <div class="icons">
-            <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
-            <span class="icon"
-              ><ion-icon name="logo-instagram"></ion-icon
-            ></span>
-            <span class="icon"><ion-icon name="logo-github"></ion-icon></span>
-          </div>
-        </div>
-        <!--barra-menu-->
-      </aside>
+					<div class="icons">
+						<a href="https://www.instagram.com/mateus_slf"
+							><span class="icon"
+								><ion-icon
+									name="logo-instagram"
+								></ion-icon></span
+						></a>
+						<a href="https://github.com/mateus-filho">
+							<span class="icon"
+							    ><ion-icon 
+								    name="logo-github"
+									></ion-icon></span
+						></a>
+						<a href="https://www.linkedin.com/in/mateus-filho/"
+							><span class="icon"
+								><ion-icon
+									name="logo-linkedin"
+								></ion-icon></span
+						></a>
+					</div>
+				</div>
+			</aside>
 
-      <div class="main-title">
-        <h1>Meu nome é Mateus</h1>
-        <h2>Sou Desenvolvedor Web</h2>
-      </div>
-      <!--main-title-->
-    </div>
-    <!--section-1-->
+			<!--main-title-->
+			<div class="main-title">
+				<h1>Meu nome é Mateus</h1>
+				<h2>Sou Desenvolvedor Web</h2>
+			</div>
+		</div>
+		
+		
+		<!--Sobre-mim-->
+		<section class="sobre" id="sobre" data-aos="fade-up">
+			<div class="sobre-mim">
+				<h1>Sobre mim</h1>
+				<p>
+					Sou de Manaus/AM, tenho 19 anos, e cursando o 2º período de
+					Análise e Desenvolvimento de Sistemas na Faculdade Martha
+					Falcão. Sempre gostei de tecnologia e games, e estou me
+					esforçando a cada dia nos estudos para atuar na área.
+				</p>
+			</div>
+		</section>
+		
+		<!---Conhecimentos-->
+		<section class="container" id="container" data-aos="fade-up">
+			<h1>Conhecimentos</h1>
+			<!--Card-->
+			<div class="cards" data-aos="fade-up">
+				<div class="c-card">
+					<img src="./img/logohtml.png" alt="html" />
+					<h3>HTML5</h3>
+				</div>
 
-    <section class="sobre" data-aos="fade-up">
-      <div class="sobre-mim">
-        <h1>Sobre mim</h1>
-        <p>
-          Sou de Manaus/AM, tenho 19 anos, e cursando o 2º período de Análise e
-          Desenvolvimento de Sistemas na Faculdade Martha Falcão. Sempre gostei
-          de tecnologia e games, e estou me esforçando a cada dia nos estudos
-          para atuar na área.
-        </p>
-      </div>
-      <!--Sobre-mim-->
-    </section>
-    <!---sobre-->
+				<!--Card-->
+				<div class="c-card">
+					<img src="./img/logocss.png" alt="css" />
+					<h3>CSS3</h3>
+				</div>
 
-    <section class="container" data-aos="fade-up">
-      <h1>Habilidades</h1>
-
-      <div class="cards" data-aos="fade-up">
-        <div class="h-card">
-          <img src="./img/logohtml.png" alt="html" />
-          <h3>HTML5</h3>
-        </div>
-        <!--Card-->
-
-        <div class="h-card">
-          <img src="./img/logocss.png" alt="css" />
-          <h3>CSS3</h3>
-        </div>
-        <!--Card-->
-
-        <div class="h-card">
-          <img src="./img/logojs.png" alt="js" />
-          <h3>JavaScript</h3>
-        </div>
-        <!--Card-->
-      </div>
-      <!--C-card-->
-    </section>
-    <!--container-->
-
-     <section class="c-container" data-aos="fade-up">
-      <h1>Contato</h1>
-      <div class="contato">
-        
-      </div>
-
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-  </body>
+				<!--Card-->
+				<div class="c-card">
+					<img src="./img/logojs.png" alt="js" />
+					<h3>JavaScript</h3>
+				</div>
+			</div>
+		</section>
+		
+		<!--Contato-->
+		<section class="contato" id="contato">
+			<h1>Contato</h1>
+			<h1>Celular: 92 99238-9326</h1>
+			<h1>Email: mateuslimafilho2003@gmail.com</h1>
+		</section>
+	
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+		></script>
+	</body>
 </html>
